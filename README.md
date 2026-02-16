@@ -93,6 +93,3 @@ pip install -r requirements.txt
 
 **Richard Boabeng**, Civil Engineer & Data Scientist
 
-* [Linkedin]([https://www.linkedin.com/in/richard-boabeng-386992125/])
-
-* [GitHub] ([https://github.com/RBoabeng])
