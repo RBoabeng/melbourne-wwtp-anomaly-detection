@@ -89,6 +89,8 @@ pip install -r requirements.txt
 
 * Launch Jupyter and execute the notebooks in the `notebooks/` directory sequentially.
 
+---
+
 ## Author
 
 **Richard Boabeng**, Civil Engineer & Data Scientist
