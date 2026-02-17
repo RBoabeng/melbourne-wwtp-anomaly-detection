@@ -1,0 +1,33 @@
+# config/config.yaml
+# Configuration file for Melbourne WWTP Anomaly Detection
+
+data:
+  raw_path: "data/raw/Data-Melbourne_F_fixed.csv"
+  processed_path: "data/processed/cleaned_wwtp_data.csv"
+
+# The dataset splits the date into three float columns
+datetime:
+  columns: 
+    - "Year"
+    - "Month"
+    - "Day"
+
+# Exact target features to use for Unsupervised Anomaly Detection
+features:
+  hydraulic:
+    - "Average Inflow"
+    - "Average Outflow"
+  energy:
+    - "Energy Consumption"
+  climate:
+    - "Total rainfall"
+    - "Average Temperature"
+  biological:
+    - "Biological Oxygen Demand"
+    - "Chemical Oxygen Demand"
+
+# Hyperparameters for our unsupervised model
+model:
+  isolation_forest:
+    contamination: 0.05  
+    random_state: 42
